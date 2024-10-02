@@ -33,6 +33,7 @@ function btn_click(key) {
     if (key == 'clear') {
         txt = " "
         a.innerHTML = txt
+        b.innerHTML = txt
     }
 }
 
