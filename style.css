@@ -1,0 +1,92 @@
+body{
+  background-color: rgb(0, 255, 255);
+}
+
+
+.box {
+    width: 400px;
+    height: 500px;
+    background-color: rgba(255, 9, 9, 0.851);
+    margin: auto;
+    display: flex;
+    border-radius: 25px;
+    overflow: auto;
+    resize: both;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.output {
+    width: 90%;
+    height: 25%;
+    background-color: grey;
+    margin: 5%;
+    border-radius: 25px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-grid {
+  width: 85%;
+  height: 65%;
+  display: grid;
+  margin: auto;
+  
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+}
+
+button {
+  font-weight:bold;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+button:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#txt-out {
+    
+    width: 96%;
+    height: 70%;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    color:aquamarine;
+    padding-top: 20px;
+    
+}
+
+  
+#main-out {
+    width: 96%;
+    height: 50%;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: wheat;
+}
+
+#txt-out {
+    position: relative;
+  }
+  
+  #txt-out::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
