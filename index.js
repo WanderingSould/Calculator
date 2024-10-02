@@ -39,27 +39,10 @@ function btn_click(key) {
 
 
 document.addEventListener('keydown' , function(event){
+
     console.log(`Key pressed: ${event.key}`);
-    var a = document.getElementById("txt-out")
-    var b = document.getElementById("main-out")
-    if (allowedKeys.includes(event.key)) {
-        txt += event.key
-        a.innerHTML = txt
-    }
-    if (event.key == 'Enter') {
-        try {
-            console.log(b)
-            b.innerHTML = eval(txt)
-        }catch(e){
-            console.log(e)
-            a.innerHTML = "invalid expression"
-        }
-        txt=""
-    }
-    if (event.key == 'Backspace') {
-        txt = txt.slice(0, -1)
-        a.innerHTML = txt
-    }
+    btn_click(event.key)
+    
 })
 
 

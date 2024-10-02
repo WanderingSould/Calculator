@@ -48,7 +48,6 @@ button:hover{
 }
 
 #txt-out {
-    
     width: 96%;
     height: 70%;
     font-size: xx-large;
@@ -60,6 +59,7 @@ button:hover{
 
   
 #main-out {
+    font-weight:bold;
     width: 96%;
     height: 50%;
     font-size: x-large;
