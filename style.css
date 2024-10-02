@@ -54,7 +54,8 @@ button:hover{
     font-family: 'Times New Roman', Times, serif;
     color:aquamarine;
     padding-top: 20px;
-    
+    position: relative;
+
 }
 
   
@@ -67,9 +68,7 @@ button:hover{
     color: wheat;
 }
 
-#txt-out {
-    position: relative;
-  }
+
   
   #txt-out::after {
     content: "|";
